@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <!-- Подключение внешнего CSS-файла -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Заголовок страницы -->
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <p>Your source for amazing services and information.</p>
+    </header>
+
+    <!-- Кнопка для раскрытия меню на мобильных устройствах -->
+    <label class="menu-toggle" for="menu-checkbox">Menu</label>
+    <input type="checkbox" id="menu-checkbox" style="display:none;">
+    
+    <!-- Навигационное меню -->
+    <ul class="menu">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+            <ul class="submenu">
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+
+    <!-- Основная секция с изображением и текстом -->
+    <main>
+        <section>
+            <h2>About Our Company</h2>
+            <p>We offer a wide range of services to help you achieve your business goals. From consulting to product design, our team is dedicated to delivering high-quality solutions.</p>
+        </section>
+
+        <section>
+            <h2>Our Featured Service</h2>
+            <img src="https://via.placeholder.com/600x300" alt="Featured Service">
+            <p>This is our most popular service, known for its excellent results and customer satisfaction. Join the many who have seen their businesses grow with our expert help!</p>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@ourcompany.com">info@ourcompany.com</a></p>
+    </footer>
+
+</body>
+</html>

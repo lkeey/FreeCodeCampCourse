@@ -1,0 +1,85 @@
+/* Основные стили для меню */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background-color: #333;
+    color: white;
+}
+
+/* Скрываем выпадающее меню по умолчанию */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 0;
+    list-style-type: none;
+}
+
+.submenu li {
+    width: 150px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #444;
+}
+
+/* Показываем выпадающее меню при наведении на родительский элемент */
+.menu > li:hover .submenu {
+    display: block;
+}
+
+/* Стили для компьютеров: показываем меню всегда */
+@media (min-width: 769px) {
+    .submenu {
+        display: block; /* Всегда показываем меню на больших экранах */
+        position: static;
+    }
+
+    .menu > li {
+        display: block;
+    }
+}
+
+/* Стили для мобильных устройств: по умолчанию скрыто */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Скрываем меню на мобильных устройствах */
+    }
+
+    /* Когда меню открыто, показываем его как блок */
+    input[type="checkbox"]:checked + .menu {
+        display: block;
+    }
+}
+
+/* Стили для кнопки открытия меню на мобильных устройствах */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+}
