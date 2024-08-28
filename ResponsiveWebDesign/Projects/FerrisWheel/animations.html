@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multiple Animations Example</title>
+    <style>
+        @keyframes changeSize {
+            from { width: 100px; height: 100px; }
+            to { width: 200px; height: 200px; }
+        }
+
+        @keyframes changeColor {
+            from { background-color: purple; }
+            to { background-color: orange; }
+        }
+
+        .multi-animation-div {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            animation: changeSize 3s ease-in-out infinite alternate,
+                       changeColor 3s ease-in-out infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="multi-animation-div"></div>
+</body>
+</html>
