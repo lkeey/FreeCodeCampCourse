@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+
+            <!-- Text Inputs -->
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+            <!-- Password Input -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <!-- Email Input -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Telephone Input -->
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <!-- Number Input -->
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="100" required>
+
+            <!-- Date Input -->
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Time Input -->
+            <label for="time">Preferred Contact Time</label>
+            <input type="time" id="time" name="contact-time">
+
+            <!-- Select Dropdown -->
+            <!-- <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="au">Australia</option>
+            </select> -->
+
+            <!-- Radio Buttons -->
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+
+            <br>
+
+            <!-- Checkboxes -->
+            <label>Languages Spoken</label>
+            <input type="checkbox" id="english" name="language" value="english">
+            <label for="english">English</label>
+
+            <input type="checkbox" id="spanish" name="language" value="spanish">
+            <label for="spanish">Spanish</label>
+
+            <input type="checkbox" id="french" name="language" value="french">
+            <label for="french">French</label>
+
+            <!-- Range Input -->
+            <label for="experience">Years of Experience</label>
+            <input type="range" id="experience" name="experience" min="0" max="30" step="1" value="5">
+
+            <!-- Color Input -->
+            <label for="color">Favorite Color</label>
+            <input type="color">
+
+            <!-- File Input -->
+            <!-- <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"> -->
+
+            <!-- URL Input -->
+            <label for="website">Personal Website</label>
+            <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+
+            <!-- Textarea -->
+            <label for="bio">Short Bio</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

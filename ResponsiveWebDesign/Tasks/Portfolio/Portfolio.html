@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksey Kiryushin</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a2e;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Container for the content */
+        .container {
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Header Animation */
+        h1 {
+            font-size: 2.5em;
+            opacity: 0;
+            animation: fadeIn 2s infinite, moveDown 2s forwards;
+        }
+
+        /* Button Styling and Animation */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #4ecca3;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Button Hover Effect */
+        .btn:hover {
+            background-color: #1e90ff;
+            transform: scale(1.1);
+        }
+
+        /* Keyframes for the header animation */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveDown {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, I'm Aleksey Kiryushin</h1>
+        <button class="btn">Learn More</button>
+    </div>
+</body>
+</html>
